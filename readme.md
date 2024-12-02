@@ -1,4 +1,4 @@
-# GitHub User Explorer
+# GitHub User & Repository Explorer
 
 This project is an Android application built to explore GitHub users and repositories. It includes the following features:
 
@@ -56,7 +56,9 @@ This application interacts with the GitHub API. Refer to the official documentat
 Github User List Screen
 ![img.png](img.png)
 ![img_1.png](img_1.png)
+
 Github User Detail Screen(with Repository List)
 ![img_3.png](img_3.png)
-WebView Screen
+
+Github Repository WebView Screen
 ![img_2.png](img_2.png)
