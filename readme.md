@@ -54,11 +54,11 @@ This application interacts with the GitHub API. Refer to the official documentat
 
 ## **Screenshots**
 Github User List Screen
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](acheive/screenshots/img.png)
+![img_1.png](acheive/screenshots/img_1.png)
 
 Github User Detail Screen(with Repository List)
-![img_3.png](img_3.png)
+![img_3.png](acheive/screenshots/img_3.png)
 
 Github Repository WebView Screen
-![img_2.png](img_2.png)
+![img_2.png](acheive/screenshots/img_2.png)
