@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.mftest.githubuser.ui.fragment.UserListFragment"
+        android:label="@string/menu_github_user"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.mftest.githubuser.ui.fragment.RepositoryListFragment"
+        android:label="@string/menu_github_user_detail"
+        tools:layout="@layout/fragment_repository_list">
+        <action
+            android:id="@+id/action_to_repositoryWebViewFragment"
+            app:destination="@id/repositoryWebViewFragment" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/repositoryWebViewFragment"
+        android:name="com.mftest.githubuser.ui.fragment.RepositoryWebviewFragment"
+        android:label="@string/menu_github_user_repository_webview"
+        tools:layout="@layout/fragment_repository_webview" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mftest.githubuser.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>
